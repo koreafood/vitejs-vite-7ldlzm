@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="realgrid" style="width: 100%; height: 300px"></div>
-    <button @click="loadData">데이터 생성하기</button>
+    <button @click="loadData">데이터 생성하기.</button>
   </div>
 </template>
 
