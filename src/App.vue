@@ -20,6 +20,9 @@ export default defineComponent({
 
 <template>
   <div id="app">
+    <router-link to="/main">main</router-link>
+    <router-link to="/table">table</router-link>
+    <router-view></router-view>
     <!--<img src="@/assets/logo.svg" alt="Vite logo" />-->
     <RealGrid />
     <hr />

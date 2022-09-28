@@ -14,7 +14,8 @@
     "realgrid": "^2.5.3",
     "tabulator-tables": "^5.3.4",
     "vite-plugin-inspect": "^0.5.1",
-    "vue": "^2.7.10"
+    "vue": "^2.7.10",
+    "vue-router": "^3.6.5"
   },
   "devDependencies": {
     "vite": "^3.1.3"
