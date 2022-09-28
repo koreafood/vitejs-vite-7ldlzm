@@ -19,5 +19,13 @@ export default new VueRouter({
       path: '/table',
       component: Table,
     },
+    {
+      path: '/form',
+      component: () => import('../views/form.vue'),
+    },
+    {
+      path: '/hello',
+      component: () => import('../views/hello.vue'),
+    },
   ],
 });
