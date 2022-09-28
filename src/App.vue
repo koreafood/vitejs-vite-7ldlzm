@@ -1,19 +1,10 @@
 <script>
 import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-import Tabulator from './components/Tabulator.vue';
-import Setup from './components/Setup.vue';
-import Input01 from './components/Input_01.vue';
-import RealGrid from './components/RealGrid.vue';
-
+import foot from './components/foot.vue';
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld,
-    Tabulator,
-    Setup,
-    Input01,
-    RealGrid,
+    foot,
   },
 });
 </script>
@@ -22,16 +13,13 @@ export default defineComponent({
   <div id="app">
     <router-link to="/main">main</router-link>
     <router-link to="/table">table</router-link>
+    <router-link to="/form">form</router-link>
+    <router-link to="/hello">hello</router-link>
     <router-view></router-view>
     <!--<img src="@/assets/logo.svg" alt="Vite logo" />-->
-    <RealGrid />
     <hr />
-    <Input01 />
-    <Setup name="abc" />
+    <foot name="abc" />
     <hr />
-    <Tabulator />
-    <hr />
-    <HelloWorld msg="Hello Vue 2 + Vite" />
   </div>
 </template>
 

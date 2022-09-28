@@ -20,6 +20,7 @@ onMounted(() => {
 
 <template>
   <div>
+    <div>foot</div>
     <button @click="log">{{ msg }}</button>
     <button @click="increment">{{ count }}</button>
   </div>
