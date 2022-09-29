@@ -1,38 +1,18 @@
 <script>
 import { TabulatorFull as Tabulator } from 'tabulator-tables'; //import Tabulator library
 
-const tabledata = [
-  { id: 1, name: 'Oli Bob', age: '12', col: 'red', dob: '' },
-  { id: 2, name: 'Mary May', age: '1', col: 'blue', dob: '14/05/1982' },
-  {
-    id: 3,
-    name: 'Christine Lobowski',
-    age: '42',
-    col: 'green',
-    dob: '22/05/1982',
-  },
-  {
-    id: 4,
-    name: 'Brendon Philips',
-    age: '125',
-    col: 'orange',
-    dob: '01/08/1980',
-  },
-  {
-    id: 5,
-    name: 'Margret Marmajuke',
-    age: '16',
-    col: 'yellow',
-    dob: '31/01/1999',
-  },
-];
-
 export default {
   data() {
     return {
       tabulator: null, //variable to hold your table
-      tableData: tabledata, //data for table to display
-      count: 0,
+      tableData: [
+        { id: 1, name: '肩', from: '12/15', kayumi: 4 },
+        { id: 2, name: '肘', from: '12/15', kayumi: 6 },
+        { id: 3, name: '背中', from: '12/11', kayumi: 3 },
+        { id: 4, name: '腰', from: '', kayumi: 0 },
+        { id: 5, name: '腹', from: '12/18', kayumi: 1 },
+        { id: 6, name: '腿', from: '12/10', kayumi: 10 },
+      ], //data for table to display
     };
   },
   mounted() {
@@ -41,19 +21,11 @@ export default {
       data: this.tableData, //link data to table
       reactiveData: true, //enable data reactivity
       columns: [
-        { title: 'Name', field: 'name', width: 150 },
+        { title: '部位', field: 'name', width: 150 },
+        { title: '痒みだした時期', field: 'from', width: 150 },
         {
-          title: '나이',
-          field: 'age',
-          hozAlign: 'left',
-          formatter: 'progress',
-        },
-        { title: 'Favourite Color', field: 'col' },
-        {
-          title: 'Data of Birth',
-          field: 'dob',
-          //sorter: 'date',
-          hozAlign: 'center',
+          title: '痒み具合',
+          field: 'kayumi',
         },
       ], //define table columns
     });
@@ -62,27 +34,5 @@ export default {
 </script>
 
 <template>
-  <div>
-    <div ref="table"></div>
-
-    <button type="button" @click="count++">count is: {{ count }}</button>
-  </div>
+  <div ref="table"></div>
 </template>
-
-<style scoped>
-a {
-  color: #42b983;
-}
-
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
-}
-
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
-}
-</style>

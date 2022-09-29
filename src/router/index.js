@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Table from '../views/table.vue';
+import TablePage from '../views/tablePage.vue';
 
 Vue.use(VueRouter);
 
@@ -17,11 +17,15 @@ export default new VueRouter({
     },
     {
       path: '/table',
-      component: Table,
+      component: TablePage,
+    },
+    {
+      path: '/tabulator',
+      component: () => import('../views/tabulatorPage.vue'),
     },
     {
       path: '/form',
-      component: () => import('../views/form.vue'),
+      component: () => import('../views/formPage.vue'),
     },
     {
       path: '/hello',

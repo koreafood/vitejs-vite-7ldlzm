@@ -13,6 +13,7 @@ export default defineComponent({
   <div id="app">
     <router-link to="/main" class="menu">main</router-link>
     <router-link to="/table" class="menu">table</router-link>
+    <router-link to="/tabulator" class="menu">tabulator</router-link>
     <router-link to="/form" class="menu">form</router-link>
     <router-link to="/hello" class="menu">hello</router-link>
     <router-view></router-view>
@@ -27,12 +28,5 @@ export default defineComponent({
 .menu {
   @apply py-2 px-4 font-semibold rounded-lg shadow-md;
 }
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 10px;
-}
+
 </style>
