@@ -16,6 +16,7 @@ export default defineComponent({
     <router-link to="/tabulator" class="menu">tabulator</router-link>
     <router-link to="/form" class="menu">form</router-link>
     <router-link to="/hello" class="menu">hello</router-link>
+    <router-link to="/chart" class="menu">chart</router-link>
     <router-view></router-view>
     <!--<img src="@/assets/logo.svg" alt="Vite logo" />-->
     <hr />
@@ -28,5 +29,4 @@ export default defineComponent({
 .menu {
   @apply py-2 px-4 font-semibold rounded-lg shadow-md;
 }
-
 </style>

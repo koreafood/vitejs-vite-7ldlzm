@@ -31,5 +31,9 @@ export default new VueRouter({
       path: '/hello',
       component: () => import('../views/hello.vue'),
     },
+    {
+      path: '/chart',
+      component: () => import('../views/chartPage.vue'),
+    },
   ],
 });
