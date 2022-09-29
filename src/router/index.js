@@ -35,5 +35,9 @@ export default new VueRouter({
       path: '/chart',
       component: () => import('../views/chartPage.vue'),
     },
+    {
+      path: '/tree',
+      component: () => import('../views/treePage.vue'),
+    },
   ],
 });

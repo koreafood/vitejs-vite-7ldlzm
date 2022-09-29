@@ -17,6 +17,7 @@ export default defineComponent({
     <router-link to="/form" class="menu">form</router-link>
     <router-link to="/hello" class="menu">hello</router-link>
     <router-link to="/chart" class="menu">chart</router-link>
+    <router-link to="/tree" class="menu">tree</router-link>
     <router-view></router-view>
     <!--<img src="@/assets/logo.svg" alt="Vite logo" />-->
     <hr />

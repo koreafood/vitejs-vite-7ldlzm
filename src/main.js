@@ -5,6 +5,7 @@ import App from './App.vue';
 import router from './router/index.js';
 import VueTabulator from 'vue-tabulator';
 
+
 Vue.use(VueTabulator);
 new Vue({
   router,
