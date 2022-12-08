@@ -39,5 +39,13 @@ export default new VueRouter({
       path: '/tree',
       component: () => import('../views/treePage.vue'),
     },
+    {
+      path: '/frame1',
+      component: () => import('../views/frame1Page.vue'),
+    },
+    {
+      path: '/frame2',
+      component: () => import('../views/frame2Page.vue'),
+    },
   ],
 });
