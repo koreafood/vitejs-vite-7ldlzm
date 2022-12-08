@@ -1,6 +1,7 @@
 <template>
   <p>
-    你在 <strong class="text-strong">{{ pageTime }}</strong> 秒前打开本页面
+    현재 페이지가 지속된고 있는 시간 :
+    <strong class="text-strong">{{ pageTime }}</strong>
   </p>
 </template>
 

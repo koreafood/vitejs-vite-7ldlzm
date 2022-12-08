@@ -1,15 +1,10 @@
 <template>
   <div>
     <h1>Frame.vue</h1>
-    <div class="app-header">Header</div>
-
+    <h2 class="app-header">Header</h2>
+    <button id="foo" v-on:click="tabOpen">ifame tab 만들기</button>
     <div class="app-body">
-      <div class="app-side">Sider</div>
-      <router-tab
-        :tabs="tabs"
-        @iframe-mounted="iframeMounted"
-        @iframe-loaded="iframeLoaded"
-      />
+      <router-tab :tabs="tabs" />
     </div>
   </div>
 </template>
@@ -18,24 +13,10 @@ export default {
   name: 'InitialTabs',
   data() {
     return {
-      tabs: [
-        { to: '/frame2/tabPage1' },
-        { to: '/frame2/tabPage2' },
-        `/iframe/${encodeURIComponent(
-          'https://cn.vuejs.org'
-        )}/Vue.js/rt-icon-web`,
-      ],
+      tabs: [{ to: '/frame2/tabPage1' }, { to: '/frame2/tabPage2' }],
     };
   },
   methods: {
-    iframeMounted(url, iframe) {
-      console.log('iframe-mounted:', url, iframe.contentWindow);
-    },
-
-    // iframe 内容加载成功
-    iframeLoaded(url, iframe) {
-      console.log('iframe-loaded:', url, iframe.contentWindow);
-    },
     tabOpen() {
       this.$tabs.openIframe(
         'https://test.lalawondan.com/',
@@ -46,3 +27,5 @@ export default {
   },
 };
 </script>
+/* `/frame2/iframe/${encodeURIComponent( 'https://test.lalawondan.com/'
+)}/defaultIframeTab/rt-icon-web`,*/
