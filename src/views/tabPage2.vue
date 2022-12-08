@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <h1>frame1</h1>
+    <h1>tabpage2</h1>
     <iframe
       src="https://test.lalawondan.com/"
       name="frame1"
@@ -10,7 +10,6 @@
       height="500px"
       sandbox="allow-scripts allow-popups"
     >
-     
     </iframe>
   </div>
 </template>
